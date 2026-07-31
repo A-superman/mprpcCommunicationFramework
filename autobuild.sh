@@ -1,8 +1,9 @@
 set -e
-
-rm -rf `pwd`/build/*
-cd `pwd`/build &&
-    cmake .. && 
+mkdir -p ../build
+rm -rf ../build/*
+cd ../build &&
+    cmake ../mprpcCommunicationFramework && 
     make
-cd ..
-cp -r `pwd`/src/include `pwd`/lib
+cd ../mprpcCommunicationFramework
+cp -r ./src/include ../build/lib
+cp -r ./src/bin ../build/bin
