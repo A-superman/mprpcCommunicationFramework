@@ -6,4 +6,4 @@ cd ../build &&
     make
 cd ../mprpcCommunicationFramework
 cp -r ./src/include ../build/lib
-cp -r ./src/bin ../build/bin
+cp -r ./bin/test.conf ../build/bin
