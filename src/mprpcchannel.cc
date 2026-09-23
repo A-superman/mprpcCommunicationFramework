@@ -23,7 +23,7 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     std::string service_name = sd->name(); // service_name
     std::string method_name = method->name(); // method_name;
 
-    // 获取残数序列化字符串长度 args_size
+    // 获取参数序列化字符串长度 args_size
     uint32_t args_size = 0;
     std::string args_str;
     if(request->SerializeToString(&args_str))

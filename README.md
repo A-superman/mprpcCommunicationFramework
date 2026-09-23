@@ -1,4 +1,5 @@
-需要开启zookeeper
+安装zookeeper protobuf
+需要开启zookeeper               zkServer.sh start          
 
 # mprpc 项目框架图
 

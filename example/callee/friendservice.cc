@@ -40,7 +40,7 @@ public:
 
 int main(int argc, char **argv)
 {
-    // 调用框架的初始化操作
+    // 调用框架的初始化操作     读配置文件
     MprpcApplication::Init(argc, argv);
 
     // Provider是一个rpc网络服务对象。把FriendService对象发布到rpc节点上
